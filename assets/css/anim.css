@@ -57,3 +57,40 @@
 /* Efecto de Giro (Flip) */
 .flipinf { animation: flip 1s ease-in-out infinite; } @keyframes flip { 0%, 100% { transform: perspective(400px) rotateY(0deg); } 50% { transform: perspective(400px) rotateY(180deg); } }
 .flip:hover { animation: flipOnce 1s ease-in-out forwards; } @keyframes flipOnce { 0%, 100% { transform: perspective(400px) rotateY(0deg); } 50% { transform: perspective(400px) rotateY(180deg); } }
+
+/* Efecto maquina de escribir */
+.fftyping{
+    white-space: nowrap;
+    width: 20ch;
+    animation: typing 2s steps(12),
+    blink 1s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing{
+    from {width: 0}
+}
+@keyframes blink{
+    50% {border-color: transparent}
+}
+
+/* Efectos de texto */
+/* Linear wipe */
+.linear-wipe {
+    text-align: center;
+    
+    background: linear-gradient(to right, #ffbf00 20%, #FF0 40%, #FF0 60%, #ffcf00 80%);
+    background-size: 200% auto;
+    
+    color: #000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 5s linear infinite;
+  }
+
+    @keyframes shine {
+        to {
+        background-position: 200% center;
+        }
+    }

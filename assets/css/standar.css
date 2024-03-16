@@ -1,25 +1,25 @@
 :root {
     /* textos estandar */
     --h1font:'Arial', sans-serif;
-    --h1color: rgb(255, 255, 255);
+    --h1color: white;
 
     --h2font: 'Arial', sans-serif;
-    --h2color: rgb(255, 255, 255);
+    --h2color: white;
 
     --h3font: 'Arial', sans-serif;
-    --h3color: black;
+    --h3color: white;
 
     --h4font: 'Arial', sans-serif;
-    --h4color: black;
+    --h4color: white;
 
     --h5font: 'Arial', sans-serif;
-    --h5color: black;
+    --h5color: white;
 
     --h6font: 'Arial', sans-serif;
-    --h6color: black;
+    --h6color: white;
 
     --pfont: 'Arial', sans-serif;
-    --p7color: black;
+    --p7color: white;
 
     /* btn hero */
     --herobtnmaxwhith:200px;
