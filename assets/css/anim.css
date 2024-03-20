@@ -94,3 +94,192 @@
         background-position: 200% center;
         }
     }
+/* efecto bounce (deslizarse) */
+/* Efecto deslizarse hacia la izquierda */
+.ffbounceLeft {
+    animation: ffbounceLeft 2s ease 0s 1 normal none;
+}
+/* Efecto infinito deslizarse hacia la izquierda */
+.ffbounceLeftINF{
+animation: ffbounceLeft 2s ease 0s infinite normal none;
+}
+
+@keyframes ffbounceLeft {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 1;
+      transform: translateX(-48px);
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    40% {
+      animation-timing-function: ease-in;
+      transform: translateX(-26px);
+    }
+  
+    65% {
+      animation-timing-function: ease-in;
+      transform: translateX(-13px);
+    }
+  
+    82% {
+      animation-timing-function: ease-in;
+      transform: translateX(-6.5px);
+    }
+  
+    93% {
+      animation-timing-function: ease-in;
+      transform: translateX(-4px);
+    }
+  
+    25%,
+    55%,
+    75%,
+    87%,
+    98% {
+      animation-timing-function: ease-out;
+      transform: translateX(0px);
+    }
+  
+    100% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+/* Efecto deslizarse hacia la derecha */
+.ffbounceRight {
+    animation: ffbounceRight 2s ease 0s 1 normal none;
+}
+/* Efecto infinito deslizarse hacia la derecha */
+.ffbounceRightINF{
+animation: ffbounceRight 2s ease 0s infinite normal none;
+}
+@keyframes ffbounceRight {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 1;
+      transform: translateX(48px);
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    40% {
+      animation-timing-function: ease-in;
+      transform: translateX(26px);
+    }
+  
+    65% {
+      animation-timing-function: ease-in;
+      transform: translateX(13px);
+    }
+  
+    82% {
+      animation-timing-function: ease-in;
+      transform: translateX(6.5px);
+    }
+  
+    93% {
+      animation-timing-function: ease-in;
+      transform: translateX(4px);
+    }
+  
+    25%,
+    55%,
+    75%,
+    87%,
+    98% {
+      animation-timing-function: ease-out;
+      transform: translateX(0px);
+    }
+  
+    100% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+/* Efectp Jello (tipo estirarse copado) */
+.ffjello{
+    animation: ffjello 2s ease 0s 1 normal none;
+}
+.ffjelloINF{
+    animation: ffjello 2s ease 0s infinite normal none;
+}
+.ffjelloHover:hover{
+    animation: ffjello 2s ease 0s 1 normal none;
+}
+
+@keyframes ffjello {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+  
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+  
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+  
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+/* efecto shake (Sacudir) infito */
+
+.ffshakeINF{
+animation: shakeINF 2s ease 0s infinite normal none;
+}
+@keyframes shakeINF {
+    0%,
+    100% {
+      transform: rotate(0deg);
+      transform-origin: 50% 50%;
+    }
+  
+    10% {
+      transform: rotate(8deg);
+    }
+  
+    20%,
+    40%,
+    60% {
+      transform: rotate(-10deg);
+    }
+  
+    30%,
+    50%,
+    70% {
+      transform: rotate(10deg);
+    }
+  
+    80% {
+      transform: rotate(-8deg);
+    }
+  
+    90% {
+      transform: rotate(8deg);
+    }
+  }
+  

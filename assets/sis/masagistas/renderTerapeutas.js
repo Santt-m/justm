@@ -18,11 +18,17 @@ const renderTerapeutaCard = (terapeuta) => {
         </div>
     `;
 
+    // Agregar evento de clic a la tarjeta
+    cardElement.addEventListener('click', () => {
+        // Redirigir a la página de detalles del terapeuta
+        window.location.href = `detail.html?id=${terapeuta.ID}`;
+    });
+
     return cardElement;
 };
 
 // Función para renderizar todas las terapeutas en la página
-export const renderAllTerapeutas = (terapeutas) => {
+export const renderAllTerapeutas = () => {
     const ultimasEntradasSection = document.getElementById('ultimas-entradas');
     ultimasEntradasSection.innerHTML = '';
     terapeutas.forEach(terapeuta => {
@@ -31,13 +37,7 @@ export const renderAllTerapeutas = (terapeutas) => {
     });
 };
 
-// Cargar las terapeutas desde el archivo bd_terapeutas.js
-const loadTerapeutas = () => {
-    // Llamamos a la función para renderizar todas las terapeutas
-    renderAllTerapeutas(terapeutas);
-};
-
-// Llamar a la función para cargar las terapeutas cuando se cargue el DOM
+// Llamar a la función para renderizar todas las terapeutas cuando se cargue el DOM
 document.addEventListener('DOMContentLoaded', () => {
-    loadTerapeutas();
+    renderAllTerapeutas();
 });

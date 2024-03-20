@@ -64,14 +64,17 @@ footer{
 /* test */
 
 div{
-  border: 1px solid black;
+  border: 1px solid rgb(9, 196, 49);
 }
 main{
   border: 1px solid blue;
 }
 section{
   border: 1px solid green;
-} 
+}
+img{
+  border: 1px solid white;
+}
 /* Navbar */
 
 .navbar {
