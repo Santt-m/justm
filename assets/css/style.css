@@ -62,7 +62,7 @@ footer{
 }
 
 /* test */
-
+/* 
 div{
   border: 1px solid rgb(9, 196, 49);
 }
@@ -74,7 +74,9 @@ section{
 }
 img{
   border: 1px solid white;
-}
+} */
+
+
 /* Navbar */
 
 .navbar {
@@ -159,24 +161,128 @@ img{
 .box{
   min-height: 90vh;
 }
-
+.mDestacadas{
+  min-height: 50vh;
+}
 .mUltimasSesiones{
   min-height: 40vh;
 }
 .mUlimasEntradas{
   min-height: 40vh;
+  gap: 5px;
+}
+
+
+/* details.html */
+
+/* estilos de renderizado por details.js */
+
+.modelo{
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 5px;
+  gap: 5px;
+}
+.modelo-Title{
+  padding: 5px;
+}
+.modelo-Title a{
+  color: inherit;
+  text-decoration: none;
+}
+.modelo-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5px;
+
+  padding: 10px;
+  text-indent: 20px;
+}
+.modelo-text a{
+  color: inherit;
+  text-decoration: none;
+}
+.modelo-img0{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.modelo-img0 img{
+  max-width: 300px;
+  max-height: 600px;
+  height: auto;
+}
+.modelo-img{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.modelo-img img{
+  width: 300px;
+  height: 300px;
+}
+
+@media screen and (min-width: 320px){
+  .modelo-Title{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1024){
+  .modelo-img0 img{
+    max-width: 900px;
+    max-height: 900px;
+    height: auto;
+  }
 }
 
 /* Estilos para las tarjetas de terapeutas */
-.terapeuta-card{
+.terapeuta-details{
+  width: 100%;
+  min-height: 100vh;
+}
+.terapeuta-card {
   width: 300px;
-  height: 300px;
+  height: 600px;
 
-  padding: 5px;
-  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.terapeuta-card:hover{
+  cursor: pointer;
+}
+.terapeuta-img img{
+  width: 100%;
+  height: auto;
+
+  border-radius: 10px 10px 0px 0px;
+}
+.terapeuta-info{
+  border: 1px solid wheat;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.terapeuta-img{
-  max-width: 290px;
-  max-height: auto;
-} 

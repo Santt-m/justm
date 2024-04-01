@@ -17,12 +17,12 @@ const terapeutas = [
         text1: "Soy un terapeuta profesional con experiencia en masajes relajantes para aliviar el estrés y la tensión muscular.",
         text2: "Ofrezco un ambiente tranquilo y relajado para que te sientas cómodo durante la sesión de masaje.",
         text3: "¡Contáctame para reservar una cita y disfrutar de un momento de relajación!",
-        img0: `./NAI/0/img0.jpg`,
-        img1: `./NAI/0/img1.jpg`,
-        img2: `./NAI/0/img2.jpg`,
-        img3: `./NAI/0/img3.jpg`,
-        img4: `./NAI/0/img4.jpg`,
-        img5: `./NAI/0/img5.jpg`
+        img0: `../assets/sis/masagistas/NAI/0/img0.jpg`,
+        img1: `../assets/sis/masagistas/NAI/0/img1.jpg`,
+        img2: `../assets/sis/masagistas/NAI/0/img2.jpg`,
+        img3: `../assets/sis/masagistas/NAI/0/img3.jpg`,
+        img4: `../assets/sis/masagistas/NAI/0/img4.jpg`,
+        img5: `../assets/sis/masagistas/NAI/0/img5.jpg`
     },
     // Terapeuta 1
     {
@@ -42,12 +42,12 @@ const terapeutas = [
         text1: "Especialista en masajes deportivos para mejorar el rendimiento y prevenir lesiones.",
         text2: "Mis sesiones están diseñadas para adaptarse a las necesidades específicas de cada cliente.",
         text3: "¡Reserva una cita conmigo y experimenta los beneficios de un masaje deportivo profesional!",
-        img0: `./NAI/1/img0.jpg`,
-        img1: `./NAI/1/img1.jpg`,
-        img2: `./NAI/1/img2.jpg`,
-        img3: `./NAI/1/img3.jpg`,
-        img4: `./NAI/1/img4.jpg`,
-        img5: `./NAI/1/img5.jpg`
+        img0: `../assets/sis/masagistas/NAI/1/img0.jpg`,
+        img1: `../assets/sis/masagistas/NAI/img1.jpg`,
+        img2: `../assets/sis/masagistas/NAI/img2.jpg`,
+        img3: `../assets/sis/masagistas/NAI/img3.jpg`,
+        img4: `../assets/sis/masagistas/NAI/img4.jpg`,
+        img5: `../assets/sis/masagistas/NAI/img5.jpg`
     },
     // Terapeuta 2
     {
@@ -67,14 +67,13 @@ const terapeutas = [
         text1: "Especialista en técnicas de masaje tailandés para aliviar el estrés y mejorar la flexibilidad.",
         text2: "Mis sesiones de masaje están diseñadas para proporcionar una experiencia de relajación profunda.",
         text3: "¡Contáctame para reservar una cita y experimentar los beneficios del masaje tailandés!",
-        img0: `./NAI/2/img0.jpg`,
-        img1: `./NAI/2/img1.jpg`,
-        img2: `./NAI/2/img2.jpg`,
-        img3: `./NAI/2/img3.jpg`,
-        img4: `./NAI/2/img4.jpg`,
-        img5: `./NAI/2/img5.jpg`
+        img0: `../assets/sis/masagistas/NAI/2/img0.jpg`,
+        img1: `../assets/sis/masagistas/NAI/2/img1.jpg`,
+        img2: `../assets/sis/masagistas/NAI/2/img2.jpg`,
+        img3: `../assets/sis/masagistas/NAI/2/img3.jpg`,
+        img4: `../assets/sis/masagistas/NAI/2/img4.jpg`,
+        img5: `../assets/sis/masagistas/NAI/2/img5.jpg`
     },
-    // Continúa agregando terapeutas del 3 al 19 aquí
     // Terapeuta 3
     {
         ID: 3,
@@ -93,12 +92,12 @@ const terapeutas = [
         text1: "Especialista en masajes suecos para aliviar el estrés y la tensión muscular.",
         text2: "Mis técnicas de masaje están diseñadas para proporcionar una experiencia de relajación profunda.",
         text3: "¡Contáctame para reservar una cita y disfrutar de un momento de bienestar y relajación!",
-        img0: `./NAI/3/img0.jpg`,
-        img1: `./NAI/3/img1.jpg`,
-        img2: `./NAI/3/img2.jpg`,
-        img3: `./NAI/3/img3.jpg`,
-        img4: `./NAI/3/img4.jpg`,
-        img5: `./NAI/3/img5.jpg`
+        img0: `../assets/sis/masagistas/NAI/3/img0.jpg`,
+        img1: `../assets/sis/masagistas/NAI/3/img1.jpg`,
+        img2: `../assets/sis/masagistas/NAI/3/img2.jpg`,
+        img3: `../assets/sis/masagistas/NAI/3/img3.jpg`,
+        img4: `../assets/sis/masagistas/NAI/3/img4.jpg`,
+        img5: `../assets/sis/masagistas/NAI/3/img5.jpg`
     },
     // Terapeuta 4
     {
@@ -118,12 +117,12 @@ const terapeutas = [
         text1: "Experta en masajes terapéuticos para aliviar dolores musculares y mejorar la movilidad.",
         text2: "Mis sesiones están diseñadas para proporcionar alivio y bienestar a mis clientes.",
         text3: "¡Agenda una cita conmigo para experimentar los beneficios de un masaje terapéutico!",
-        img0: `./NAI/4/img0.jpg`,
-        img1: `./NAI/4/img1.jpg`,
-        img2: `./NAI/4/img2.jpg`,
-        img3: `./NAI/4/img3.jpg`,
-        img4: `./NAI/4/img4.jpg`,
-        img5: `./NAI/4/img5.jpg`
+        img0: `../assets/sis/masagistas/NAI/4/img0.jpg`,
+        img1: `../assets/sis/masagistas/NAI/4/img1.jpg`,
+        img2: `../assets/sis/masagistas/NAI/4/img2.jpg`,
+        img3: `../assets/sis/masagistas/NAI/4/img3.jpg`,
+        img4: `../assets/sis/masagistas/NAI/4/img4.jpg`,
+        img5: `../assets/sis/masagistas/NAI/4/img5.jpg`
     },
     // Terapeuta 5
     {
@@ -143,12 +142,12 @@ const terapeutas = [
         text1: "Especialista en masajes de tejido profundo para aliviar la tensión muscular y mejorar la movilidad.",
         text2: "Mis técnicas de masaje están diseñadas para proporcionar alivio duradero y bienestar general.",
         text3: "¡Contáctame para reservar una cita y experimentar los beneficios del masaje de tejido profundo!",
-        img0: `./NAI/5/img0.jpg`,
-        img1: `./NAI/5/img1.jpg`,
-        img2: `./NAI/5/img2.jpg`,
-        img3: `./NAI/5/img3.jpg`,
-        img4: `./NAI/5/img4.jpg`,
-        img5: `./NAI/5/img5.jpg`
+        img0: `../assets/sis/masagistas/NAI/5/img0.jpg`,
+        img1: `../assets/sis/masagistas/NAI/5/img1.jpg`,
+        img2: `../assets/sis/masagistas/NAI/5/img2.jpg`,
+        img3: `../assets/sis/masagistas/NAI/5/img3.jpg`,
+        img4: `../assets/sis/masagistas/NAI/5/img4.jpg`,
+        img5: `../assets/sis/masagistas/NAI/5/img5.jpg`
     },
     // Terapeuta 6
     {
@@ -168,12 +167,12 @@ const terapeutas = [
         text1: "Experta en masajes de drenaje linfático para reducir la retención de líquidos y mejorar la circulación.",
         text2: "Mis sesiones de masaje están diseñadas para promover la desintoxicación y el bienestar.",
         text3: "¡Reserva una cita conmigo y experimenta los beneficios del masaje de drenaje linfático!",
-        img0: `./NAI/6/img0.jpg`,
-        img1: `./NAI/6/img1.jpg`,
-        img2: `./NAI/6/img2.jpg`,
-        img3: `./NAI/6/img3.jpg`,
-        img4: `./NAI/6/img4.jpg`,
-        img5: `./NAI/6/img5.jpg`
+        img0: `../assets/sis/masagistas/NAI/6/img0.jpg`,
+        img1: `../assets/sis/masagistas/NAI/6/img1.jpg`,
+        img2: `../assets/sis/masagistas/NAI/6/img2.jpg`,
+        img3: `../assets/sis/masagistas/NAI/6/img3.jpg`,
+        img4: `../assets/sis/masagistas/NAI/6/img4.jpg`,
+        img5: `../assets/sis/masagistas/NAI/6/img5.jpg`
     },
     // Terapeuta 7
     {
@@ -193,12 +192,12 @@ const terapeutas = [
         text1: "Especialista en masajes suecos para aliviar el estrés y la tensión muscular.",
         text2: "Mis técnicas de masaje están diseñadas para proporcionar una experiencia de relajación profunda.",
         text3: "¡Contáctame para reservar una cita y disfrutar de un momento de bienestar y relajación!",
-        img0: `./NAI/7/img0.jpg`,
-        img1: `./NAI/7/img1.jpg`,
-        img2: `./NAI/7/img2.jpg`,
-        img3: `./NAI/7/img3.jpg`,
-        img4: `./NAI/7/img4.jpg`,
-        img5: `./NAI/7/img5.jpg`
+        img0: `../assets/sis/masagistas/NAI/7/img0.jpg`,
+        img1: `../assets/sis/masagistas/NAI/7/img1.jpg`,
+        img2: `../assets/sis/masagistas/NAI/7/img2.jpg`,
+        img3: `../assets/sis/masagistas/NAI/7/img3.jpg`,
+        img4: `../assets/sis/masagistas/NAI/7/img4.jpg`,
+        img5: `../assets/sis/masagistas/NAI/7/img5.jpg`
     },
     // Terapeuta 8
     {
@@ -218,12 +217,12 @@ const terapeutas = [
         text1: "Especialista en masajes terapéuticos para aliviar dolores musculares y mejorar la movilidad.",
         text2: "Mis sesiones están diseñadas para proporcionar alivio y bienestar a mis clientes.",
         text3: "¡Agenda una cita conmigo para experimentar los beneficios de un masaje terapéutico!",
-        img0: `./NAI/8/img0.jpg`,
-        img1: `./NAI/8/img1.jpg`,
-        img2: `./NAI/8/img2.jpg`,
-        img3: `./NAI/8/img3.jpg`,
-        img4: `./NAI/8/img4.jpg`,
-        img5: `./NAI/8/img5.jpg`
+        img0: `../assets/sis/masagistas/NAI/8/img0.jpg`,
+        img1: `../assets/sis/masagistas/NAI/8/img1.jpg`,
+        img2: `../assets/sis/masagistas/NAI/8/img2.jpg`,
+        img3: `../assets/sis/masagistas/NAI/8/img3.jpg`,
+        img4: `../assets/sis/masagistas/NAI/8/img4.jpg`,
+        img5: `../assets/sis/masagistas/NAI/8/img5.jpg`
     },
     // Terapeuta 9
     {
@@ -243,12 +242,12 @@ const terapeutas = [
         text1: "Especialista en masajes deportivos para mejorar el rendimiento y prevenir lesiones.",
         text2: "Mis sesiones están diseñadas para adaptarse a las necesidades específicas de cada cliente.",
         text3: "¡Reserva una cita conmigo y experimenta los beneficios de un masaje deportivo profesional!",
-        img0: `./NAI/9/img0.jpg`,
-        img1: `./NAI/9/img1.jpg`,
-        img2: `./NAI/9/img2.jpg`,
-        img3: `./NAI/9/img3.jpg`,
-        img4: `./NAI/9/img4.jpg`,
-        img5: `./NAI/9/img5.jpg`
+        img0: `../assets/sis/masagistas/NAI/9/img0.jpg`,
+        img1: `../assets/sis/masagistas/NAI/9/img1.jpg`,
+        img2: `../assets/sis/masagistas/NAI/9/img2.jpg`,
+        img3: `../assets/sis/masagistas/NAI/9/img3.jpg`,
+        img4: `../assets/sis/masagistas/NAI/9/img4.jpg`,
+        img5: `../assets/sis/masagistas/NAI/9/img5.jpg`
     },
     // Terapeuta 10
     {
@@ -268,12 +267,12 @@ const terapeutas = [
         text1: "Especialista en técnicas de masaje tailandés para aliviar el estrés y mejorar la flexibilidad.",
         text2: "Mis sesiones de masaje están diseñadas para proporcionar una experiencia de relajación profunda.",
         text3: "¡Contáctame para reservar una cita y experimentar los beneficios del masaje tailandés!",
-        img0: `./NAI/10/img0.jpg`,
-        img1: `./NAI/10/img1.jpg`,
-        img2: `./NAI/10/img2.jpg`,
-        img3: `./NAI/10/img3.jpg`,
-        img4: `./NAI/10/img4.jpg`,
-        img5: `./NAI/10/img5.jpg`
+        img0: `../assets/sis/masagistas/NAI/10/img0.jpg`,
+        img1: `../assets/sis/masagistas/NAI/10/img1.jpg`,
+        img2: `../assets/sis/masagistas/NAI/10/img2.jpg`,
+        img3: `../assets/sis/masagistas/NAI/10/img3.jpg`,
+        img4: `../assets/sis/masagistas/NAI/10/img4.jpg`,
+        img5: `../assets/sis/masagistas/NAI/10/img5.jpg`
     },
     // Terapeuta 11
     {
@@ -293,12 +292,12 @@ const terapeutas = [
         text1: "Soy un terapeuta profesional con experiencia en masajes relajantes para aliviar el estrés y la tensión muscular.",
         text2: "Ofrezco un ambiente tranquilo y relajado para que te sientas cómodo durante la sesión de masaje.",
         text3: "¡Contáctame para reservar una cita y disfrutar de un momento de relajación!",
-        img0: `./NAI/11/img0.jpg`,
-        img1: `./NAI/11/img1.jpg`,
-        img2: `./NAI/11/img2.jpg`,
-        img3: `./NAI/11/img3.jpg`,
-        img4: `./NAI/11/img4.jpg`,
-        img5: `./NAI/11/img5.jpg`
+        img0: `../assets/sis/masagistas/NAI/11/img0.jpg`,
+        img1: `../assets/sis/masagistas/NAI/11/img1.jpg`,
+        img2: `../assets/sis/masagistas/NAI/11/img2.jpg`,
+        img3: `../assets/sis/masagistas/NAI/11/img3.jpg`,
+        img4: `../assets/sis/masagistas/NAI/11/img4.jpg`,
+        img5: `../assets/sis/masagistas/NAI/11/img5.jpg`
     },
     // Terapeuta 12
     {
@@ -318,12 +317,12 @@ const terapeutas = [
         text1: "Especialista en masajes deportivos para mejorar el rendimiento y prevenir lesiones.",
         text2: "Mis sesiones están diseñadas para adaptarse a las necesidades específicas de cada cliente.",
         text3: "¡Reserva una cita conmigo y experimenta los beneficios de un masaje deportivo profesional!",
-        img0: `./NAI/12/img0.jpg`,
-        img1: `./NAI/12/img1.jpg`,
-        img2: `./NAI/12/img2.jpg`,
-        img3: `./NAI/12/img3.jpg`,
-        img4: `./NAI/12/img4.jpg`,
-        img5: `./NAI/12/img5.jpg`
+        img0: `../assets/sis/masagistas/NAI/12/img0.jpg`,
+        img1: `../assets/sis/masagistas/NAI/12/img1.jpg`,
+        img2: `../assets/sis/masagistas/NAI/12/img2.jpg`,
+        img3: `../assets/sis/masagistas/NAI/12/img3.jpg`,
+        img4: `../assets/sis/masagistas/NAI/12/img4.jpg`,
+        img5: `../assets/sis/masagistas/NAI/12/img5.jpg`
     },
     // Terapeuta 13
     {
@@ -343,12 +342,12 @@ const terapeutas = [
         text1: "Especialista en masajes suecos para aliviar el estrés y la tensión muscular.",
         text2: "Mis técnicas de masaje están diseñadas para proporcionar una experiencia de relajación profunda.",
         text3: "¡Contáctame para reservar una cita y disfrutar de un momento de bienestar y relajación!",
-        img0: `./NAI/13/img0.jpg`,
-        img1: `./NAI/13/img1.jpg`,
-        img2: `./NAI/13/img2.jpg`,
-        img3: `./NAI/13/img3.jpg`,
-        img4: `./NAI/13/img4.jpg`,
-        img5: `./NAI/13/img5.jpg`
+        img0: `../assets/sis/masagistas/NAI/13/img0.jpg`,
+        img1: `../assets/sis/masagistas/NAI/13/img1.jpg`,
+        img2: `../assets/sis/masagistas/NAI/13/img2.jpg`,
+        img3: `../assets/sis/masagistas/NAI/13/img3.jpg`,
+        img4: `../assets/sis/masagistas/NAI/13/img4.jpg`,
+        img5: `../assets/sis/masagistas/NAI/13/img5.jpg`
     },
     // Terapeuta 14
     {
@@ -368,12 +367,12 @@ const terapeutas = [
         text1: "Especialista en masajes terapéuticos para aliviar dolores musculares y mejorar la movilidad.",
         text2: "Mis sesiones están diseñadas para proporcionar alivio y bienestar a mis clientes.",
         text3: "¡Agenda una cita conmigo para experimentar los beneficios de un masaje terapéutico!",
-        img0: `./NAI/14/img0.jpg`,
-        img1: `./NAI/14/img1.jpg`,
-        img2: `./NAI/14/img2.jpg`,
-        img3: `./NAI/14/img3.jpg`,
-        img4: `./NAI/14/img4.jpg`,
-        img5: `./NAI/14/img5.jpg`
+        img0: `../assets/sis/masagistas/NAI/14/img0.jpg`,
+        img1: `../assets/sis/masagistas/NAI/14/img1.jpg`,
+        img2: `../assets/sis/masagistas/NAI/14/img2.jpg`,
+        img3: `../assets/sis/masagistas/NAI/14/img3.jpg`,
+        img4: `../assets/sis/masagistas/NAI/14/img4.jpg`,
+        img5: `../assets/sis/masagistas/NAI/14/img5.jpg`
     },
     // Terapeuta 15
     {
@@ -393,12 +392,12 @@ const terapeutas = [
         text1: "Especialista en masajes deportivos para mejorar el rendimiento y prevenir lesiones.",
         text2: "Mis sesiones están diseñadas para adaptarse a las necesidades específicas de cada cliente.",
         text3: "¡Reserva una cita conmigo y experimenta los beneficios de un masaje deportivo profesional!",
-        img0: `./NAI/15/img0.jpg`,
-        img1: `./NAI/15/img1.jpg`,
-        img2: `./NAI/15/img2.jpg`,
-        img3: `./NAI/15/img3.jpg`,
-        img4: `./NAI/15/img4.jpg`,
-        img5: `./NAI/15/img5.jpg`
+        img0: `../assets/sis/masagistas/NAI/15/img0.jpg`,
+        img1: `../assets/sis/masagistas/NAI/15/img1.jpg`,
+        img2: `../assets/sis/masagistas/NAI/15/img2.jpg`,
+        img3: `../assets/sis/masagistas/NAI/15/img3.jpg`,
+        img4: `../assets/sis/masagistas/NAI/15/img4.jpg`,
+        img5: `../assets/sis/masagistas/NAI/15/img5.jpg`
     },
     // Terapeuta 16
     {
@@ -418,12 +417,12 @@ const terapeutas = [
         text1: "Especialista en técnicas de masaje tailandés para aliviar el estrés y mejorar la flexibilidad.",
         text2: "Mis sesiones de masaje están diseñadas para proporcionar una experiencia de relajación profunda.",
         text3: "¡Contáctame para reservar una cita y experimentar los beneficios del masaje tailandés!",
-        img0: `./NAI/16/img0.jpg`,
-        img1: `./NAI/16/img1.jpg`,
-        img2: `./NAI/16/img2.jpg`,
-        img3: `./NAI/16/img3.jpg`,
-        img4: `./NAI/16/img4.jpg`,
-        img5: `./NAI/16/img5.jpg`
+        img0: `../assets/sis/masagistas/NAI/16/img0.jpg`,
+        img1: `../assets/sis/masagistas/NAI/16/img1.jpg`,
+        img2: `../assets/sis/masagistas/NAI/16/img2.jpg`,
+        img3: `../assets/sis/masagistas/NAI/16/img3.jpg`,
+        img4: `../assets/sis/masagistas/NAI/16/img4.jpg`,
+        img5: `../assets/sis/masagistas/NAI/16/img5.jpg`
     },
     // Terapeuta 17
     {
@@ -443,12 +442,12 @@ const terapeutas = [
         text1: "Soy un terapeuta profesional con experiencia en masajes relajantes para aliviar el estrés y la tensión muscular.",
         text2: "Ofrezco un ambiente tranquilo y relajado para que te sientas cómodo durante la sesión de masaje.",
         text3: "¡Contáctame para reservar una cita y disfrutar de un momento de relajación!",
-        img0: `./NAI/17/img0.jpg`,
-        img1: `./NAI/17/img1.jpg`,
-        img2: `./NAI/17/img2.jpg`,
-        img3: `./NAI/17/img3.jpg`,
-        img4: `./NAI/17/img4.jpg`,
-        img5: `./NAI/17/img5.jpg`
+        img0: `../assets/sis/masagistas/NAI/17/img0.jpg`,
+        img1: `../assets/sis/masagistas/NAI/17/img1.jpg`,
+        img2: `../assets/sis/masagistas/NAI/17/img2.jpg`,
+        img3: `../assets/sis/masagistas/NAI/17/img3.jpg`,
+        img4: `../assets/sis/masagistas/NAI/17/img4.jpg`,
+        img5: `../assets/sis/masagistas/NAI/17/img5.jpg`
     },
     // Terapeuta 18
     {
@@ -468,12 +467,12 @@ const terapeutas = [
         text1: "Especialista en masajes deportivos para mejorar el rendimiento y prevenir lesiones.",
         text2: "Mis sesiones están diseñadas para adaptarse a las necesidades específicas de cada cliente.",
         text3: "¡Reserva una cita conmigo y experimenta los beneficios de un masaje deportivo profesional!",
-        img0: `./NAI/18/img0.jpg`,
-        img1: `./NAI/18/img1.jpg`,
-        img2: `./NAI/18/img2.jpg`,
-        img3: `./NAI/18/img3.jpg`,
-        img4: `./NAI/18/img4.jpg`,
-        img5: `./NAI/18/img5.jpg`
+        img0: `../assets/sis/masagistas/NAI/18/img0.jpg`,
+        img1: `../assets/sis/masagistas/NAI/18/img1.jpg`,
+        img2: `../assets/sis/masagistas/NAI/18/img2.jpg`,
+        img3: `../assets/sis/masagistas/NAI/18/img3.jpg`,
+        img4: `../assets/sis/masagistas/NAI/18/img4.jpg`,
+        img5: `../assets/sis/masagistas/NAI/18/img5.jpg`
     },
     // Terapeuta 19
     {
@@ -493,12 +492,12 @@ const terapeutas = [
         text1: "Especialista en masajes suecos para aliviar el estrés y la tensión muscular.",
         text2: "Mis técnicas de masaje están diseñadas para proporcionar una experiencia de relajación profunda.",
         text3: "¡Contáctame para reservar una cita y disfrutar de un momento de bienestar y relajación!",
-        img0: `./NAI/19/img0.jpg`,
-        img1: `./NAI/19/img1.jpg`,
-        img2: `./NAI/19/img2.jpg`,
-        img3: `./NAI/19/img3.jpg`,
-        img4: `./NAI/19/img4.jpg`,
-        img5: `./NAI/19/img5.jpg`
+        img0: `../assets/sis/masagistas/NAI/19/img0.jpg`,
+        img1: `../assets/sis/masagistas/NAI/19/img1.jpg`,
+        img2: `../assets/sis/masagistas/NAI/19/img2.jpg`,
+        img3: `../assets/sis/masagistas/NAI/19/img3.jpg`,
+        img4: `../assets/sis/masagistas/NAI/19/img4.jpg`,
+        img5: `../assets/sis/masagistas/NAI/19/img5.jpg`
     },
     // Terapeuta 20
     {
@@ -518,12 +517,12 @@ const terapeutas = [
         text1: "Especialista en masajes terapéuticos para aliviar dolores musculares y mejorar la movilidad.",
         text2: "Mis sesiones están diseñadas para proporcionar alivio y bienestar a mis clientes.",
         text3: "¡Agenda una cita conmigo para experimentar los beneficios de un masaje terapéutico!",
-        img0: `./NAI/20/img0.jpg`,
-        img1: `./NAI/20/img1.jpg`,
-        img2: `./NAI/20/img2.jpg`,
-        img3: `./NAI/20/img3.jpg`,
-        img4: `./NAI/20/img4.jpg`,
-        img5: `./NAI/20/img5.jpg`
+        img0: `../assets/sis/masagistas/NAI/20/img0.jpg`,
+        img1: `../assets/sis/masagistas/NAI/20/img1.jpg`,
+        img2: `../assets/sis/masagistas/NAI/20/img2.jpg`,
+        img3: `../assets/sis/masagistas/NAI/20/img3.jpg`,
+        img4: `../assets/sis/masagistas/NAI/20/img4.jpg`,
+        img5: `../assets/sis/masagistas/NAI/20/img5.jpg`
     }
 ];
 // Export the data

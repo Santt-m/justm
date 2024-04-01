@@ -4,7 +4,7 @@ import terapeutas from './bd_terapeutas.js';
 // Obtener el ID del terapeuta de la URL
 const urlParams = new URLSearchParams(window.location.search);
 const terapeutaId = parseInt(urlParams.get('id')); // Convertir el ID a un número
-console.log("ID del terapeuta:", terapeutaId);
+console.log("ID del terapeuta buscado:", terapeutaId);
 
 // Función para obtener los detalles del terapeuta por su ID
 const obtenerDetallesTerapeuta = (id) => {
@@ -14,30 +14,36 @@ const obtenerDetallesTerapeuta = (id) => {
         // Mostrar los detalles del terapeuta en la página
         const terapeutaDetailsContainer = document.getElementById('terapeuta-details');
         terapeutaDetailsContainer.innerHTML = `
-        <div class="modelo w100 h100 fx -c -j-s-b p5 gap1">
-            <div class="modelo-Title fx -c a768-r">
+        <div class="modelo">
+            <div class="modelo-Title">
                 <div class="w100 a768w50">
                     <h1>${terapeuta.Nombre}</h1>
                     <p>${terapeuta.Genero}</p>
                     <p>${terapeuta.Ubicacion}</p>
-                    <p>WhatsApp: ${terapeuta.whatsapp}</p>
+                    <a href="https://api.whatsapp.com/send?phone=${terapeuta.whatsapp}&text=Justmassage%20-%20Hola%20quiero%20reservar%20un%20turno">${terapeuta.whatsapp}</a>
                 </div>
                 <div class="modelo-masageType w100 a768w50">
                     <p>Tipo de masajes:</p>
-                    ${terapeuta.masageType}
+                    <p class="p10">${terapeuta.masageType}</p>
                 </div>
             </div>
-            <div class="modelo-cont w100 fx -c a768-r">
+            <div class="modelo-cont w100 h100 fx -c a768-r">
                 <div class="modelo-img0 w100 a768w50">
                     <img src="${terapeuta.img0}" alt="(no se encontro la imagen)">
                 </div>
-                <div class="modelo-text h100">
+                <div class="modelo-text w100 a768w50">
                     <p>${terapeuta.text1}</p>
                     <p>${terapeuta.text2}</p>
                     <p>${terapeuta.text3}</p>
+                    <div>
+                        <h4>${terapeuta.Nombre}</h4>
+                        <a href="https://api.whatsapp.com/send?phone=${terapeuta.whatsapp}&text=Justmassage%20-%20Hola%20quiero%20reservar%20un%20turno">${terapeuta.whatsapp}</a>
+                        <p>${terapeuta.horarios}</p>
+                        <p>${terapeuta.dias}</p>
+                    </div>
                 </div>
             </div>
-            <div class="modelo-img w100 fx -r -w -j-s-a gap1">
+            <div class="modelo-img w100 fx -r -w -j-s-a p5">
                 <img src="${terapeuta.img1}" alt="">
                 <img src="${terapeuta.img2}" alt="">
                 <img src="${terapeuta.img3}" alt="">

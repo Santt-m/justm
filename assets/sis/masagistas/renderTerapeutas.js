@@ -2,7 +2,7 @@
 import terapeutas from './bd_terapeutas.js';
 
 // Función para renderizar una tarjeta de terapeuta
-const renderTerapeutaCard = (terapeuta) => {
+export const renderTerapeutaCard = (terapeuta) => {
     const cardElement = document.createElement('div');
     cardElement.classList.add('terapeuta-card');
 
@@ -27,7 +27,7 @@ const renderTerapeutaCard = (terapeuta) => {
     return cardElement;
 };
 
-// Función para renderizar todas las terapeutas en la página
+// Función para renderizar todas las terapeutas
 export const renderAllTerapeutas = () => {
     const ultimasEntradasSection = document.getElementById('ultimas-entradas');
     ultimasEntradasSection.innerHTML = '';
