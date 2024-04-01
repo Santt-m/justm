@@ -36,6 +36,11 @@ export const renderDestacadas = () => {
                     <p class="terapeuta-whatsapp">WhatsApp: ${terapeuta.whatsapp}</p>
                 </div>
             `;
+                // Agregar evento de clic a la tarjeta
+    cardElement.addEventListener('click', () => {
+        // Redirigir a la página de detalles del terapeuta
+        window.location.href = `detail.html?id=${terapeuta.ID}`;
+    });
             // Agregar la tarjeta al contenedor de terapeutas destacadas
             destacadasSection.appendChild(cardElement);
         }
