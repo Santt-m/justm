@@ -8,7 +8,7 @@ export const renderTerapeutaCard = (terapeuta) => {
 
     // Contenido de la tarjeta de terapeuta
     cardElement.innerHTML = `
-        <div class="terapeuta-img">
+        <div class="terapeuta-img ">
             <img src="${terapeuta.img0}" alt="${terapeuta.Nombre}">
         </div>
         <div class="terapeuta-info">

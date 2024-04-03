@@ -25,12 +25,12 @@ export const renderDestacadas = () => {
         if (terapeuta) {
             // Crear el elemento de tarjeta para la terapeuta
             const cardElement = document.createElement('div');
-            cardElement.classList.add('terapeuta-card');
+            cardElement.classList.add('descatadas-card');
             cardElement.innerHTML = `
-                <div class="terapeuta-img">
+                <div class="descatadas-img">
                     <img src="${terapeuta.img0}" alt="${terapeuta.Nombre}">
                 </div>
-                <div class="terapeuta-info">
+                <div class="descatadas-info">
                     <h4 class="terapeuta-nombre">${terapeuta.Nombre}</h4>
                     <p class="terapeuta-ubicacion">${terapeuta.Ubicacion}</p>
                     <p class="terapeuta-whatsapp">WhatsApp: ${terapeuta.whatsapp}</p>
