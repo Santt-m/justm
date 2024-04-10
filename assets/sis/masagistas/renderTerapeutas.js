@@ -36,8 +36,15 @@ export const renderAllTerapeutas = () => {
         ultimasEntradasSection.appendChild(cardElement);
     });
 };
-
+const initRenderAllTerapeutas = () => {
+    if (document.getElementById('ultimas-entradas')) {
+        renderAllTerapeutas();
+    }else
+    {
+        console.log('No existe ultimas-entradas');
+    }
+}
 // Llamar a la función para renderizar todas las terapeutas cuando se cargue el DOM
 document.addEventListener('DOMContentLoaded', () => {
-    renderAllTerapeutas();
+    initRenderAllTerapeutas();
 });

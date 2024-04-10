@@ -46,9 +46,15 @@ export const renderDestacadas = () => {
         }
     });
 };
-
+function init() {
+    if (document.getElementById('Destacadas')) {
+        renderDestacadas();
+    }else
+    {
+        console.log('No existe Destacadas');
+    }
+}
 // Llamar a la función para renderizar las terapeutas destacadas cuando se cargue el DOM
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOMContentLoaded');
-    renderDestacadas();
+    init();
 });

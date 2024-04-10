@@ -48,8 +48,16 @@ export const renderImpresiones = () => {
     });
 };
 
+function initImpresiones(){
+    if (document.getElementById('impresiones')) {
+        renderImpresiones();
+    }else
+    {
+        console.log('No se encontró la sección Impresiones');
+    }
+}
+
 // Llamar a la función para renderizar las impresiones cuando se cargue el DOM
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOMContentLoaded');
-    renderImpresiones();
+    initImpresiones();
 });
