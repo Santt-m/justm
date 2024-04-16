@@ -17,10 +17,12 @@ import { renderDestacadas } from '../assets/destacadas/destacadas.js';
 import { renderSesiones } from '../assets/sesiones/sesiones.js';
 // importo la funcion para renderizar las impresiones
 import { renderImpresiones } from '../assets/impresiones/impresiones.js';
+// Importa la función renderizarTarjetaTerapeuta desde heroDestacadas.js
+import { renderizarTarjetaTerapeuta } from './heroDestacadas/heroDestacadas.js';
 
 
 
 // Llamar a la función para renderizar todas las terapeutas cuando se cargue el DOM
 document.addEventListener('DOMContentLoaded', () => {
-
+  renderizarTarjetaTerapeuta();
 });

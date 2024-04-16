@@ -13,7 +13,7 @@ const terapeutas = [
         redes: ["Instagram: @carlosg", "Facebook: Carlos García"],
         dias: ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes"],
         horarios: ["09:00", "13:00", "17:00", "21:00"],
-        masageType: ["Masaje relajante"],
+        masageType: ["Masaje relajante","Tantrico","b2b"],
         text1: "Soy un terapeuta profesional con experiencia en masajes relajantes para aliviar el estrés y la tensión muscular.",
         text2: "Ofrezco un ambiente tranquilo y relajado para que te sientas cómodo durante la sesión de masaje.",
         text3: "¡Contáctame para reservar una cita y disfrutar de un momento de relajación!",
