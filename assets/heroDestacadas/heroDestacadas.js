@@ -11,10 +11,11 @@ const generarTarjetaTerapeuta = (terapeuta) => {
 
     // Contenido de la tarjeta de terapeuta
     cardElement.innerHTML = `
-    <div class="w100 h100 fx -c -a-c -j-c a768-r">
-        <div class="w100 h50 a768w50 a768h100 fx -c -a-c -j-c">
+    <div class="w100 fx -c -a-c -j-c a768-r">
+        <div class="w100 h100 fx -c -a-c -j-c">
             <h4>¿Buscas un terapeuta?</h4>
             <h5> Te presentamos a ${terapeuta.Nombre}</h5>
+            <img class="heroDestacadas-img" src="${terapeuta.img0}" alt="${terapeuta.Nombre}">
             <p> Realiza:</p>
             <p class="heroDestacadas-masagType">${terapeuta.masageType}</p>
             <h4>Atiende en:</h4>
@@ -23,11 +24,6 @@ const generarTarjetaTerapeuta = (terapeuta) => {
             <p>${terapeuta.horarios}</p>
             <p>Contacta con ${terapeuta.Nombre} ahora !</p>
             <p>${terapeuta.whatsapp}</p>
-        </div>
-        <div class="w100 h50 a768w50 a768h100 fx -c -a-c -j-c">
-            <div class="w100 h100 fx -c -a-c -a-">
-                <img class="heroDestacadas-img" src="${terapeuta.img0}" alt="${terapeuta.Nombre}">
-            </div>
         </div>
     </div>
     `;

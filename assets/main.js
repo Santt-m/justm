@@ -24,5 +24,4 @@ import { renderizarTarjetaTerapeuta } from './heroDestacadas/heroDestacadas.js';
 
 // Llamar a la función para renderizar todas las terapeutas cuando se cargue el DOM
 document.addEventListener('DOMContentLoaded', () => {
-  renderizarTarjetaTerapeuta();
 });
