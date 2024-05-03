@@ -31,9 +31,6 @@ export const initHero = () => {
   // si existe herofrases, llamar a cambiarFrase
   if (herofrases) {
     cambiarFrase();
-  }else
-  {
-    console.log('No existe herofrases');
   }
 };
 

@@ -6,7 +6,6 @@ import terapeutas from '../sis/masagistas/bd_terapeutas.js';
 // Función para renderizar las impresiones
 export const renderImpresiones = () => {
     const impresionesSection = document.getElementById('impresiones');
-    console.log('Impresiones Section:', impresionesSection); // Verifica que se encuentre la sección Impresiones
 
     impresionesSection.innerHTML = '';
 
@@ -19,7 +18,6 @@ export const renderImpresiones = () => {
 
         // Buscar al terapeuta por su ID
         const terapeuta = terapeutas.find(terapeuta => terapeuta.ID === impresionIdInt);
-        console.log('Terapeuta:', terapeuta); // Verifica que se haya encontrado la información del terapeuta
 
         if (terapeuta) {
             // Crear el elemento de la tarjeta para el terapeuta

@@ -7,21 +7,17 @@ import destacadas from './destacadas_bd.js';
 // Función para renderizar las terapeutas destacadas
 export const renderDestacadas = () => {
     const destacadasSection = document.getElementById('Destacadas');
-    console.log('Destacadas Section:', destacadasSection); // Verifica que se encuentre la sección Destacadas
-
     destacadasSection.innerHTML = '';
 
     // Iterar sobre los IDs de las terapeutas destacadas
     destacadas.forEach(terapeutaId => {
-        console.log('Terapeuta ID:', terapeutaId); // Verifica que se esté iterando sobre los IDs correctos
+        console.log('Destacada ID:', terapeutaId); // Verifica que se esté iterando sobre los IDs correctos
 
         // Convertir el ID a número entero
         const terapeutaIdInt = parseInt(terapeutaId, 10);
 
         // Buscar la terapeuta por su ID
         const terapeuta = terapeutas.find(terapeuta => terapeuta.ID === terapeutaIdInt);
-        console.log('Terapeuta:', terapeuta); // Verifica que se haya encontrado la información de la terapeuta
-
         if (terapeuta) {
             // Crear el elemento de tarjeta para la terapeuta
             const cardElement = document.createElement('div');
@@ -46,12 +42,11 @@ export const renderDestacadas = () => {
         }
     });
 };
+
+
 function init() {
     if (document.getElementById('Destacadas')) {
         renderDestacadas();
-    }else
-    {
-        console.log('No existe Destacadas');
     }
 }
 // Llamar a la función para renderizar las terapeutas destacadas cuando se cargue el DOM
