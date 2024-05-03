@@ -1,7 +1,7 @@
 // Importa los datos de las sesiones
 import sesiones from './sesiones_bd.js';
 // Importa los datos de las terapeutas
-import terapeutas from '../sis/masagistas/bd_terapeutas.js';
+import terapeutas from '../masagistas/bd_terapeutas.js';
 
 // Función para renderizar las sesiones
 export const renderSesiones = () => {
@@ -10,9 +10,9 @@ export const renderSesiones = () => {
 
     sesionesSection.innerHTML = '';
 
-    // Iterar sobre los IDs de las sesiones
+    // // Verifica que se esté iterando sobre los IDs correctos
     sesiones.forEach(sesionId => {
-        console.log('Sesión ID:', sesionId); // Verifica que se esté iterando sobre los IDs correctos
+        console.log('Sesión ID:', sesionId); 
 
         // Convertir el ID a número entero
         const sesionIdInt = parseInt(sesionId, 10);
@@ -31,7 +31,7 @@ export const renderSesiones = () => {
                 </div>
                 <div class="sesiones-info">
                     <h4 class="terapeuta-nombre">${terapeuta.Nombre}</h4>
-                </div>
+                </div>(
             `;
 
             // Agregar evento de clic a la tarjeta
@@ -49,5 +49,8 @@ export const renderSesiones = () => {
 // Llamar a la función para renderizar las sesiones cuando se cargue el DOM
 document.addEventListener('DOMContentLoaded', () => {
     console.log('DOMContentLoaded');
-    renderSesiones();
+
+    if(document.getElementById('sesiones')){
+        renderSesiones();
+    }
 });

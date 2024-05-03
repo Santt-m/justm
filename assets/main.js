@@ -14,7 +14,7 @@ import terapeutas from '../assets/sis/masagistas/bd_terapeutas.js';
 // Importa la función para renderizar las terapeutas destacadas
 import { renderDestacadas } from '../assets/destacadas/destacadas.js';
 // Importa la función para renderizar las sesiones
-import { renderSesiones } from '../assets/sesiones/sesiones.js';
+import { renderSesiones } from '../assets/sis/sesiones/sesiones.js';
 // importo la funcion para renderizar las impresiones
 import { renderImpresiones } from '../assets/impresiones/impresiones.js';
 
