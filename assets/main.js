@@ -9,16 +9,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // importa la funcion heroFrases de hero.js
 import { initHero } from '../assets/hero/hero.js';
+
 // Importa los datos de las terapeutas
-import terapeutas from '../assets/sis/masagistas/bd_terapeutas.js';
+import {initRenderAllTerapeutas} from '../assets/sis/masagistas/renderTerapeutas.js'
+
 // Importa la función para renderizar las terapeutas destacadas
 import { renderDestacadas } from '../assets/destacadas/destacadas.js';
+
 // Importa la función para renderizar las sesiones
 import { renderSesiones } from '../assets/sis/sesiones/sesiones.js';
+
 // importo la funcion para renderizar las impresiones
 import { renderImpresiones } from '../assets/impresiones/impresiones.js';
+
 // Importa la función renderizarTarjetaTerapeuta desde heroDestacadas.js
-import { renderizarTarjetaTerapeuta } from './heroDestacadas/heroDestacadas.js';
+import { heroDestacadasInit } from './heroDestacadas/heroDestacadas.js';
 
 
 

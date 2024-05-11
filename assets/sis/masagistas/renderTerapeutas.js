@@ -36,7 +36,7 @@ export const renderAllTerapeutas = () => {
         ultimasEntradasSection.appendChild(cardElement);
     });
 };
-const initRenderAllTerapeutas = () => {
+export const initRenderAllTerapeutas = () => {
     if (document.getElementById('ultimas-entradas')) {
         renderAllTerapeutas();
     }else

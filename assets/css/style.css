@@ -138,29 +138,23 @@ img{
 /* hero promo heroDestacadas.js */
 
 .heroDestacadas-card{
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.heroDestacadas-card:hover{
+  cursor: pointer;
+}
 .heroDestacadas-img{
-  width: auto;
-  height: 80%;
+  width: 100%;
   max-width: 500px;
-  max-height: 600px;
-  border-radius: 25PX;
+  height: auto;
+  max-height: 500px;
+
+  border-radius: 25px;
 }
-
-.heroDestacadas-masagType{
-  padding: 5px;
-  margin: 5px;
-  border: 1px solid blue;
-  border-radius: 15px;
-
-  text-align: center;
-}
-
 
 /* Terapeutas.html */
 
@@ -199,6 +193,7 @@ img{
 }
 .modelo-Title{
   padding: 5px;
+  width: 100%;
 }
 .modelo-Title a{
   color: inherit;
@@ -238,7 +233,7 @@ img{
 }
 .modelo-img img{
   width: 300px;
-  height: 300px;
+  height: auto;
 }
 
 @media screen and (min-width: 320px){
@@ -262,8 +257,8 @@ img{
   min-height: 100vh;
 }
 .terapeuta-card {
-  width: 300px;
-  height: 600px;
+  width: 250px;
+  height: 400px;
   margin: 5px;
   display: flex;
   flex-direction: column;
@@ -274,6 +269,9 @@ img{
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease-in-out;
+}
+.terapeuta-card:hover{
+  cursor: pointer;
 }
 .terapeuta-card:hover{
   cursor: pointer;
@@ -297,7 +295,7 @@ img{
 
 .descatadas-card {
   width: 300px;
-  height: 550px;
+  height: 400px;
   margin: 5px;
   display: flex;
   flex-direction: column;
@@ -309,6 +307,10 @@ img{
   transition: box-shadow 0.3s ease-in-out;
 
 }
+.descatadas-card:hover{
+  cursor: pointer;
+}
+
 .descatadas-img img{
   width: 100%;
   height: auto;
@@ -316,7 +318,7 @@ img{
 }
 .descatadas-info{
   width: 100%;
-  height: 20%;
+  height: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -327,7 +329,7 @@ img{
 
 .sesiones-card {
   width: 300px;
-  height: 500px;
+  height: 350px;
   margin: 5px;
   display: flex;
   flex-direction: column;
@@ -338,6 +340,9 @@ img{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease-in-out;
 
+}
+.sesiones-card:hover{
+  cursor: pointer;
 }
 .sesiones-img img{
   width: 100%;
@@ -356,8 +361,8 @@ img{
 /* estilos para las card de impresiones */
 
 .impresiones-card {
-  width: 100%;
-  max-height: 500px;
+  max-width: 250px;
+  max-height: 350px;
   margin: 5px;
   display: flex;
   flex-direction: column;
@@ -368,6 +373,9 @@ img{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease-in-out;
 
+}
+.impresiones-card:hover{
+  cursor: pointer;
 }
 .impresiones-img img{
   width: 100%;
@@ -382,3 +390,4 @@ img{
   align-items: center;
   justify-content: space-around;
 }
+

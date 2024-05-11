@@ -2,30 +2,16 @@
 import terapeutas from '../sis/masagistas/bd_terapeutas.js';
 
 // Array de índices de terapeutas a mostrar
-const indicesTerapeutasAMostrar = [0, 2, 4]; // Por ejemplo, mostrar los terapeutas 0, 2 y 4
+const indicesTerapeutasAMostrar = [0, 2, 4];
 
 // Función para generar el HTML de la tarjeta de un terapeuta
-const generarTarjetaTerapeuta = (terapeuta) => {
+const renderHeroDestacadas = (terapeuta) => {
     const cardElement = document.createElement('div');
     cardElement.classList.add('heroDestacadas-card');
-
-    // Contenido de la tarjeta de terapeuta
+    // Contenido del div a renderizar
     cardElement.innerHTML = `
-    <div class="w100 fx -c -a-c -j-c a768-r">
-        <div class="w100 h100 fx -c -a-c -j-c">
-            <h4>¿Buscas un terapeuta?</h4>
-            <h5> Te presentamos a ${terapeuta.Nombre}</h5>
-            <img class="heroDestacadas-img" src="${terapeuta.img0}" alt="${terapeuta.Nombre}">
-            <p> Realiza:</p>
-            <p class="heroDestacadas-masagType">${terapeuta.masageType}</p>
-            <h4>Atiende en:</h4>
-            <p>${terapeuta.Ubicacion}</p>
-            <p>${terapeuta.dias}</p>
-            <p>${terapeuta.horarios}</p>
-            <p>Contacta con ${terapeuta.Nombre} ahora !</p>
-            <p>${terapeuta.whatsapp}</p>
-        </div>
-    </div>
+        <p>Contacta con ${terapeuta.Nombre} ahora !</p>
+        <img class="heroDestacadas-img" src="${terapeuta.img0}" alt="${terapeuta.Nombre}">
     `;
 
     // Agregar evento de clic a la tarjeta
@@ -50,9 +36,17 @@ export const renderizarTarjetaTerapeuta = () => {
         // Obtener el terapeuta correspondiente al índice seleccionado aleatoriamente
         const terapeutaAMostrar = terapeutas[indexTerapeutaAMostrar];
         // Generar el HTML de la tarjeta del terapeuta y renderizarla en el div heroDestacadas
-        const tarjetaHTML = generarTarjetaTerapeuta(terapeutaAMostrar);
+        const tarjetaHTML = renderHeroDestacadas(terapeutaAMostrar);
         heroDestacadas.appendChild(tarjetaHTML);
-    } else {
-        console.error("No se encontró el elemento con ID 'heroDestacadas'");
     }
 };
+
+export const heroDestacadasInit = () => {
+    if (document.getElementById('heroDestacadas')) {
+        renderizarTarjetaTerapeuta();
+    }
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    heroDestacadasInit();
+});

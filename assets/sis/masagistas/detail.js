@@ -15,14 +15,14 @@ const obtenerDetallesTerapeuta = (id) => {
         const terapeutaDetailsContainer = document.getElementById('terapeuta-details');
         terapeutaDetailsContainer.innerHTML = `
         <div class="modelo">
-            <div class="modelo-Title">
-                <div class="w100 a768w50">
+            <div class="modelo-Title fx -r -w -a-c -j-c">
+                <div class="w80 a768w30">
                     <h1>${terapeuta.Nombre}</h1>
                     <p>${terapeuta.Genero}</p>
                     <p>${terapeuta.Ubicacion}</p>
                     <a href="https://api.whatsapp.com/send?phone=${terapeuta.whatsapp}&text=Justmassage%20-%20Hola%20quiero%20reservar%20un%20turno">${terapeuta.whatsapp}</a>
                 </div>
-                <div class="modelo-masageType w100 a768w50">
+                <div class="modelo-masageType w80 a768w30">
                     <p>Tipo de masajes:</p>
                     <p class="p10">${terapeuta.masageType}</p>
                 </div>
