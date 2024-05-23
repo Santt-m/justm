@@ -19,8 +19,8 @@ import { renderDestacadas } from '../assets/destacadas/destacadas.js';
 // Importa la función para renderizar las sesiones
 import { renderSesiones } from '../assets/sis/sesiones/sesiones.js';
 
-// importo la funcion para renderizar las impresiones
-import { renderImpresiones } from '../assets/impresiones/impresiones.js';
+// Importa la función renderImpresiones desde impresiones.js
+import { renderAllImpresiones } from '../assets/impresiones/impresiones.js';
 
 // Importa la función renderizarTarjetaTerapeuta desde heroDestacadas.js
 import { heroDestacadasInit } from './heroDestacadas/heroDestacadas.js';

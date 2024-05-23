@@ -9,9 +9,9 @@ export const renderSesiones = () => {
 
     sesionesSection.innerHTML = '';
 
-    // // Verifica que se esté iterando sobre los IDs correctos
+    // Verifica que se esté iterando sobre los IDs correctos
     sesiones.forEach(sesionId => {
-        console.log('Sesiones ID:', sesionId); 
+        console.log('Sesiones ID:', sesionId);
 
         // Convertir el ID a número entero
         const sesionIdInt = parseInt(sesionId, 10);
@@ -23,10 +23,10 @@ export const renderSesiones = () => {
             // Crear el elemento de tarjeta para la terapeuta
             const cardElement = document.createElement('div');
             cardElement.classList.add('sesiones-card');
+            cardElement.style.backgroundImage = `url(${terapeuta.img0})`;
+            cardElement.style.backgroundSize = 'cover';
+            cardElement.style.backgroundPosition = 'center';
             cardElement.innerHTML = `
-                <div class="sesiones-img">
-                    <img src="${terapeuta.img0}" alt="${terapeuta.Nombre}">
-                </div>
                 <div class="sesiones-info">
                     <h4 class="terapeuta-nombre">${terapeuta.Nombre}</h4>
                 </div>
@@ -46,7 +46,7 @@ export const renderSesiones = () => {
 
 // Llamar a la función para renderizar las sesiones cuando se cargue el DOM
 document.addEventListener('DOMContentLoaded', () => {
-    if(document.getElementById('sesiones')){
+    if (document.getElementById('sesiones')) {
         renderSesiones();
     }
 });

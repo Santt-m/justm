@@ -6,11 +6,13 @@ export const renderTerapeutaCard = (terapeuta) => {
     const cardElement = document.createElement('div');
     cardElement.classList.add('terapeuta-card');
 
+    // Establecer la imagen de fondo de la tarjeta
+    cardElement.style.backgroundImage = `url(${terapeuta.img0})`;
+    cardElement.style.backgroundSize = 'cover';
+    cardElement.style.backgroundPosition = 'center';
+
     // Contenido de la tarjeta de terapeuta
     cardElement.innerHTML = `
-        <div class="terapeuta-img ">
-            <img src="${terapeuta.img0}" alt="${terapeuta.Nombre}">
-        </div>
         <div class="terapeuta-info">
             <h4 class="terapeuta-nombre">${terapeuta.Nombre}</h4>
             <p class="terapeuta-ubicacion">${terapeuta.Ubicacion}</p>
@@ -36,14 +38,15 @@ export const renderAllTerapeutas = () => {
         ultimasEntradasSection.appendChild(cardElement);
     });
 };
+
 export const initRenderAllTerapeutas = () => {
     if (document.getElementById('ultimas-entradas')) {
         renderAllTerapeutas();
-    }else
-    {
+    } else {
         console.log('No existe ultimas-entradas');
     }
-}
+};
+
 // Llamar a la función para renderizar todas las terapeutas cuando se cargue el DOM
 document.addEventListener('DOMContentLoaded', () => {
     initRenderAllTerapeutas();

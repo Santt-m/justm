@@ -15,40 +15,45 @@ export const renderDestacadas = () => {
 
         // Convertir el ID a número entero
         const terapeutaIdInt = parseInt(terapeutaId, 10);
+        if (isNaN(terapeutaIdInt)) {
+            console.error(`Invalid terapeuta ID: ${terapeutaId}`);
+            return;
+        }
 
         // Buscar la terapeuta por su ID
         const terapeuta = terapeutas.find(terapeuta => terapeuta.ID === terapeutaIdInt);
         if (terapeuta) {
             // Crear el elemento de tarjeta para la terapeuta
             const cardElement = document.createElement('div');
-            cardElement.classList.add('descatadas-card');
+            cardElement.classList.add('destacadas-card');
+            cardElement.style.backgroundImage = `url(${terapeuta.img0})`;
+            cardElement.style.backgroundSize = 'cover';
+            cardElement.style.backgroundPosition = 'center';
             cardElement.innerHTML = `
-                <div class="descatadas-img">
-                    <img src="${terapeuta.img0}" alt="${terapeuta.Nombre}">
-                </div>
-                <div class="descatadas-info">
+                <div class="destacadas-info">
                     <h4 class="terapeuta-nombre">${terapeuta.Nombre}</h4>
                     <p class="terapeuta-ubicacion">${terapeuta.Ubicacion}</p>
-                    <p class="terapeuta-whatsapp">WhatsApp: ${terapeuta.whatsapp}</p>
                 </div>
             `;
-                // Agregar evento de clic a la tarjeta
-    cardElement.addEventListener('click', () => {
-        // Redirigir a la página de detalles del terapeuta
-        window.location.href = `detail.html?id=${terapeuta.ID}`;
-    });
+            // Agregar evento de clic a la tarjeta
+            cardElement.addEventListener('click', () => {
+                // Redirigir a la página de detalles del terapeuta
+                window.location.href = `detail.html?id=${terapeuta.ID}`;
+            });
             // Agregar la tarjeta al contenedor de terapeutas destacadas
             destacadasSection.appendChild(cardElement);
+        } else {
+            console.warn(`No terapeuta found with ID: ${terapeutaIdInt}`);
         }
     });
 };
-
 
 function init() {
     if (document.getElementById('Destacadas')) {
         renderDestacadas();
     }
 }
+
 // Llamar a la función para renderizar las terapeutas destacadas cuando se cargue el DOM
 document.addEventListener('DOMContentLoaded', () => {
     init();

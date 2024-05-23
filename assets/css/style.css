@@ -251,12 +251,12 @@ img{
     height: auto;
   }
 }
-
 /* Estilos para las tarjetas de terapeutas */
-.terapeuta-details{
+.terapeuta-details {
   width: 100%;
   min-height: 100vh;
 }
+
 .terapeuta-card {
   width: 250px;
   height: 400px;
@@ -265,36 +265,45 @@ img{
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
-  border: 1px solid#ff0000 ;
+  border: 1px solid #ff0000;
   border-radius: 10px;
   transition: 0.3s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Agregamos position: relative para posicionar elementos hijos */
 }
-.terapeuta-card:hover{
-  cursor: pointer;
 
-  -webkit-box-shadow:0px 0px 10px 3px #ff0000 ;
-  -moz-box-shadow:0px 0px 10px 3px #ff0000 ;
-  box-shadow:0px 0px 10px 3px #ff0000 ;
-}
-.terapeuta-img img{
+.terapeuta-info {
   width: 100%;
-  height: auto;
-
-  border-radius: 10px 10px 0px 0px;
-}
-.terapeuta-info{
-  width: 100%;
-  height: 20%;
+  height: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+  border-radius: 0 0 10px 10px;
+  padding: 10px;
+  position: absolute; /* Posiciona el contenido relativo a .terapeuta-card */
+  bottom: 0; /* Alinea al fondo */
+  opacity: 0; /* Inicialmente ocultar .terapeuta-info */
+  transform: translateY(100%); /* Desplazar .terapeuta-info hacia abajo */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Agregar transiciones para una apariencia suave */
+}
+
+.terapeuta-card:hover .terapeuta-info {
+  opacity: 1; /* Mostrar .terapeuta-info cuando se pasa el mouse sobre .terapeuta-card */
+  transform: translateY(0); /* Desplazar .terapeuta-info hacia arriba */
+}
+
+.terapeuta-card:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 10px 3px #ff0000;
+  -moz-box-shadow: 0px 0px 10px 3px #ff0000;
+  box-shadow: 0px 0px 10px 3px #ff0000;
 }
 
 /* estilos para las card destacadas */
-
-.descatadas-card {
+.destacadas-card {
   width: 300px;
   height: 400px;
   margin: 5px;
@@ -302,34 +311,55 @@ img{
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid #abb60d ;
+  border: 1px solid #abb60d;
   border-radius: 10px;
   transition: 0.3s ease-in-out;
-
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative; /* Permite posicionar el contenido de manera relativa */
 }
-.descatadas-card:hover{
+
+.destacadas-card:hover {
   cursor: pointer;
-  -webkit-box-shadow:0px 0px 10px 3px #abb60d  ;
-  -moz-box-shadow:0px 0px 10px 3px #abb60d  ;
-  box-shadow:0px 0px 10px 3px #abb60d  ;
+  -webkit-box-shadow: 0px 0px 10px 3px #abb60d;
+  -moz-box-shadow: 0px 0px 10px 3px #abb60d;
+  box-shadow: 0px 0px 10px 3px #abb60d;
 }
 
-.descatadas-img img{
-  width: 100%;
-  height: auto;
-  border-radius: 10px 10px 0px 0px;
-}
-.descatadas-info{
+.destacadas-info {
   width: 100%;
   height: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+  border-radius: 0 0 10px 10px;
+  padding: 10px;
+  position: absolute; /* Posiciona el contenido relativo al .destacadas-card */
+  bottom: 0; /* Alinea al fondo */
+  opacity: 0; /* Inicialmente oculta .destacadas-info */
+  transform: translateY(100%); /* Desplaza .destacadas-info hacia abajo */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Agregar transiciones para una apariencia suave */
+}
+
+.destacadas-card:hover .destacadas-info {
+  opacity: 1; /* Mostrar .destacadas-info cuando se pasa el mouse sobre .destacadas-card */
+  transform: translateY(0); /* Desplazar .destacadas-info hacia arriba */
+}
+
+
+.terapeuta-nombre {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.terapeuta-ubicacion, .terapeuta-whatsapp {
+  margin: 5px 0;
 }
 
 /* estilos para las card sesiones de fotos */
-
 .sesiones-card {
   width: 300px;
   height: 350px;
@@ -337,66 +367,90 @@ img{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  border: 1px solid #ddd;
-  border: 1px solid#ff0000 ;
+  justify-content: flex-end;
+  border: 1px solid #ff0000;
   border-radius: 10px;
   transition: 0.3s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative;
+}
 
-}
-.sesiones-card:hover{
+.sesiones-card:hover {
   cursor: pointer;
-  -webkit-box-shadow:0px 0px 10px 3px #ff0000 ;
-  -moz-box-shadow:0px 0px 10px 3px #ff0000 ;
-  box-shadow:0px 0px 10px 3px #ff0000 ;
+  -webkit-box-shadow: 0px 0px 10px 3px #ff0000;
+  -moz-box-shadow: 0px 0px 10px 3px #ff0000;
+  box-shadow: 0px 0px 10px 3px #ff0000;
 }
-.sesiones-img img{
+
+.sesiones-info {
   width: 100%;
-  height: auto;
-  border-radius: 10px 10px 0px 0px;
-}
-.sesiones-info{
-  width: 100%;
-  height: 20%;
+  height: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+  border-radius: 0 0 10px 10px;
+  padding: 10px;
+  position: absolute; /* Posiciona el contenido relativo al .sesiones-card */
+  bottom: 0; /* Alinea al fondo */
+  opacity: 0; /* Inicialmente oculta .sesiones-info */
+  transform: translateY(100%); /* Desplaza .sesiones-info hacia abajo */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Agregar transiciones para una apariencia suave */
 }
 
-/* estilos para las card de impresiones */
+.sesiones-card:hover .sesiones-info {
+  opacity: 1; /* Mostrar .sesiones-info cuando se pasa el mouse sobre .sesiones-card */
+  transform: translateY(0); /* Desplazar .sesiones-info hacia arriba */
+}
 
+/* Estilos para las tarjetas de impresiones */
 .impresiones-card {
-  max-width: 250px;
-  max-height: 350px;
+  width: 250px;
+  height: 350px;
   margin: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  border: 1px solid #ddd;
-  border: 1px solid#ff0000 ;
+  justify-content: flex-end;
+  border: 1px solid #ff0000;
   border-radius: 10px;
   transition: 0.3s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative;
+}
 
-}
-.impresiones-card:hover{
+.impresiones-card:hover {
   cursor: pointer;
-  -webkit-box-shadow:0px 0px 10px 3px #ff0000 ;
-  -moz-box-shadow:0px 0px 10px 3px #ff0000 ;
-  box-shadow:0px 0px 10px 3px #ff0000 ;
+  -webkit-box-shadow: 0px 0px 10px 3px #ff0000;
+  -moz-box-shadow: 0px 0px 10px 3px #ff0000;
+  box-shadow: 0px 0px 10px 3px #ff0000;
 }
-.impresiones-img img{
+
+.impresiones-info {
   width: 100%;
-  height: auto;
-  max-height: 400px;
-  border-radius: 10px 10px 0px 0px;
-}
-.impresiones-info{
-  width: 100%;
+  height: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+  border-radius: 10px 10px 10px 10px;
+  padding: 10px;
+  position: absolute; /* Posiciona el contenido relativo al .impresiones-card */
+  bottom: 0; /* Alinea al fondo */
+  opacity: 0; /* Inicialmente oculta .impresiones-info */
+  transform: translateY(100%); /* Desplaza .impresiones-info hacia abajo */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Agregar transiciones para una apariencia suave */
 }
 
+.impresiones-card:hover .impresiones-info {
+  opacity: 1; /* Mostrar .impresiones-info cuando se pasa el mouse sobre .impresiones-card */
+  transform: translateY(0); /* Desplazar .impresiones-info hacia arriba */
+  height: 100%; /* Ocupar todo el espacio vertical de la tarjeta */
+  justify-content: center; /* Centrar el contenido verticalmente */
+}
