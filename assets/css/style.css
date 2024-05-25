@@ -57,7 +57,6 @@ main{
 footer{
     width: 100%;
     height: 10vh;
-
     border-top: 1px solid black;
 }
 
@@ -80,8 +79,10 @@ img{
 /* Navbar */
 
 .navbar {
+  height: 10vh;
   position: sticky;
   top: 0px;
+  z-index: 1;
   background-color: var(--navbarbackgroundcolor);
   color: var(--navbartextColor);
   font-family: var(--navbarfont);
@@ -135,26 +136,42 @@ img{
 
 /* Hero */
 
-/* hero promo heroDestacadas.js */
+.hero{
+  background-image: url(../hero/Designer.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 50%;
+  position: relative;
+  top: -10vh;
+}
+.heroTitle{
+  margin-top: 15vh;
+  margin-bottom: 10vh;
+  gap: 20px;
+}
+@keyframes movimiento-gradiente {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
+}
 
-.heroDestacadas-card{
-  width: 90%;
-  height: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ffd700, #ffac00, #ffd700);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: movimiento-gradiente 3s linear infinite;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8); /* Agregar sombra blanca al texto */
+  -webkit-text-stroke: 1px #ffac00; /* Añadir borde blanco de 2px alrededor del texto */
+  text-stroke: 1px #ffac00; /* Añadir borde blanco de 2px alrededor del texto */
 }
-.heroDestacadas-card:hover{
-  cursor: pointer;
-}
-.heroDestacadas-img{
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  max-height: 500px;
 
-  border-radius: 25px;
-}
 
 /* Terapeutas.html */
 
